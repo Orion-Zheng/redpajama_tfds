@@ -2,7 +2,7 @@ Please replace the environmental variable `$SCRATCH` in all scripts with the act
 Dependencies: tfds-nightly, zstandard  
 # 1. Download raw data files  
 Run `download_scripts\subsets_wget.sh`, and then all raw data files will appear under the `redpajama_raw` directory.  
-# 2. Verify the Checksum and decompress common_crawl subset from .zst to .jsonl  
+# 2. Verify the Checksum and decompress common_crawl subset
 1. Run `redpajama_raw\check_checksum.sh`, making sure all downloaded data files are complete.  
 2. Run `redpajama_raw\decompress_cc.sh`, decompressing common_crawl subset from .zst to .jsonl and delete original .zst files.  
 # 3. Generate TFDS of all redpajama subsets  

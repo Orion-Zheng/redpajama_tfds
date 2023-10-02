@@ -1,7 +1,7 @@
-(Please replace `$SCRATCH` in all scripts with the actual path to `redpajama_tfds` on your machine)
+(Please replace `$SCRATCH` in all scripts with the actual path to this repo `redpajama_tfds` on your machine)
 # 1. Download raw data files  
 Run `download_scripts\subsets_wget.sh`, and then all raw data files will appear under the `redpajama_raw` directory.  
-# 2. Check the Checksum and decompress common_crawl subset from .zst to .jsonl  
+# 2. Check the data files and decompress files
 1. Run `redpajama_raw\check_checksum.sh`, making sure all downloaded data files are complete.  
 2. Run `redpajama_raw\decompress_cc.sh`, decompressing common_crawl subset from .zst to .jsonl and delete original .zst files.  
 # 3. Generate TFDS of all redpajama subsets
